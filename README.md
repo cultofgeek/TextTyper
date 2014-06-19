@@ -4,10 +4,11 @@ TextTyper
 A basic class that will render a string one character at a time like a typewriter.
 
 To instantiate, you need to pass in 3 arguments: 
-the message that you want typed out, 
-the target name, 
-and the number of milliseconds you want to take between printing out each character: 
 
-new TextTyper("the string that you want typed out", "#target_element_in_dom", 15);
+new TextTyper([str], [target], [speed]);
+
+str = the string that you want typed out
+target = the dom selector that you are targeting for the string output
+speed = the number of milliseconds you want the type animation to take between each character
 
 To begin, the typing effect, call the "render" method.
